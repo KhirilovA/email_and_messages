@@ -16,9 +16,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/messages/', include(router.urls)),
     path('docs/', include_docs_urls(title='BlogAPI')),
-    #path('schema', get_schema_view(
-    #    title='MessageApi',
-    #    description='Api for the MessageApi',
-    #    version='1.0.0'
-    #    ), name='openapi-schema')
+    path('schema', get_schema_view(
+        title='MessageApi',
+        description='Api for the MessageApi',
+        version='1.0.0'
+        ), name='openapi-schema')
 ]
